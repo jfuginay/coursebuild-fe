@@ -23,6 +23,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "claude-task-master": "^1.6.4"
+    "@supabase/supabase-js": "^2.50.3",
+    "claude-task-master": "^1.6.4",
+    "dotenv": "^17.0.1"
   }
 }

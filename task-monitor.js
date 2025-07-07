@@ -35,7 +35,13 @@ class TaskMonitor {
       const commits = execSync('git log --oneline -10', { encoding: 'utf8' }).trim().split('\n');
       
       // Get changed files
-      const changedFiles = execSync('git diff --name-only HEAD~1', { encoding: 'utf8' }).trim().split('\n').filter(f => f);
+      let changedFiles = [];
+      try {
+        changedFiles = execSync('git diff --name-only HEAD~1', { encoding: 'utf8' }).trim().split('\n').filter(f => f);
+      } catch (e) {
+        // If no previous commit, get all tracked files
+        changedFiles = execSync('git ls-files', { encoding: 'utf8' }).trim().split('\n').filter(f => f);
+      }
       
       // Get uncommitted changes
       const uncommittedFiles = execSync('git status --porcelain', { encoding: 'utf8' }).trim().split('\n').filter(f => f);

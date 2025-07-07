@@ -14,5 +14,111 @@
     "category": "general",
     "completed": false,
     "createdAt": "2025-07-07T19:49:48.134Z"
+  },
+  {
+    "id": "1751918248859mx0mz",
+    "title": "TODO: Implement user authentication with OAuth (example-code.js)",
+    "priority": "medium",
+    "category": "code-quality",
+    "source": "code-comment",
+    "file": "example-code.js",
+    "completed": false,
+    "createdAt": "2025-07-07T19:57:28.859Z",
+    "autoDetected": true
+  },
+  {
+    "id": "1751918248861xlduo",
+    "title": "Add tests for example-code.js",
+    "priority": "medium",
+    "category": "testing",
+    "source": "missing-tests",
+    "file": "example-code.js",
+    "completed": false,
+    "createdAt": "2025-07-07T19:57:28.861Z",
+    "autoDetected": true
+  },
+  {
+    "id": "175191824886205bu8",
+    "title": "Review and test dependency changes in package.json",
+    "priority": "high",
+    "category": "dependencies",
+    "source": "dependency-change",
+    "file": "package.json",
+    "completed": false,
+    "createdAt": "2025-07-07T19:57:28.862Z",
+    "autoDetected": true
+  },
+  {
+    "id": "1751918248862c82de",
+    "title": "Add tests for scripts/import-tasks.js",
+    "priority": "medium",
+    "category": "testing",
+    "source": "missing-tests",
+    "file": "scripts/import-tasks.js",
+    "completed": false,
+    "createdAt": "2025-07-07T19:57:28.862Z",
+    "autoDetected": true
+  },
+  {
+    "id": "1751918248862v6moo",
+    "title": "Add tests for task-master.js",
+    "priority": "medium",
+    "category": "testing",
+    "source": "missing-tests",
+    "file": "task-master.js",
+    "completed": false,
+    "createdAt": "2025-07-07T19:57:28.862Z",
+    "autoDetected": true
+  },
+  {
+    "id": "1751918248862psgbl",
+    "title": "Add tests for task-monitor.js",
+    "priority": "medium",
+    "category": "testing",
+    "source": "missing-tests",
+    "file": "task-monitor.js",
+    "completed": false,
+    "createdAt": "2025-07-07T19:57:28.862Z",
+    "autoDetected": true
+  },
+  {
+    "id": "1751918498224",
+    "title": "Implement eBay API integration with OAuth2 authentication and listing endpoints - HIGH",
+    "priority": "high",
+    "category": "api-integration",
+    "completed": false,
+    "createdAt": "2025-07-07T20:01:38.224Z"
+  },
+  {
+    "id": "1751918504396",
+    "title": "Build Etsy API v3 integration for shop management and listing creation - HIGH",
+    "priority": "high",
+    "category": "api-integration",
+    "completed": false,
+    "createdAt": "2025-07-07T20:01:44.396Z"
+  },
+  {
+    "id": "1751918512053",
+    "title": "Create unified listing interface to post to multiple marketplaces simultaneously - CRITICAL MVP",
+    "priority": "critical",
+    "category": "api-integration",
+    "completed": false,
+    "createdAt": "2025-07-07T20:01:52.053Z"
+  },
+  {
+    "id": "1751918518773",
+    "title": "Design in-app user marketplace profile for direct peer-to-peer sales",
+    "priority": "medium",
+    "category": "api-integration",
+    "completed": false,
+    "createdAt": "2025-07-07T20:01:58.773Z"
+  },
+  {
+    "id": "1751918526916",
+    "title": "Implement inventory sync to prevent overselling across platforms - HIGH",
+    "priority": "high",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-07T20:02:06.916Z"
   }
 ]
