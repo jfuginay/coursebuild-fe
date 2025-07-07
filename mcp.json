@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "task-master": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-task-master"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
+      }
+    },
+    "linear": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-linear"
+      ],
+      "env": {
+        "LINEAR_API_KEY": "YOUR_LINEAR_API_KEY"
+      }
+    },
+    "todoist": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-todoist"
+      ],
+      "env": {
+        "TODOIST_API_TOKEN": "YOUR_TODOIST_TOKEN"
+      }
+    }
+  }
+}

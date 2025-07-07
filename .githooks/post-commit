@@ -1,0 +1,16 @@
+#!/bin/bash
+# Auto-detect tasks after each commit
+
+echo "🔍 Analyzing commit for new tasks..."
+node task-monitor.js hook
+
+# If detected tasks exist, prompt to add them
+if [ -f "detected-tasks.json" ]; then
+  echo ""
+  echo "Would you like to add these tasks to Task Master? (y/n)"
+  read -r response
+  
+  if [ "$response" = "y" ]; then
+    node scripts/import-tasks.js
+  fi
+fi

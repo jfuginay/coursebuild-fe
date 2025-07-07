@@ -1,0 +1,28 @@
+{
+  "name": "listpro",
+  "version": "1.0.0",
+  "description": "AI-powered marketplace listing assistant that scans items via video/photo and helps create optimized listings across multiple platforms.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task": "node task-master.js",
+    "task:add": "node task-master.js add",
+    "task:list": "node task-master.js list",
+    "task:complete": "node task-master.js complete",
+    "task:sync": "node task-master.js sync",
+    "monitor:scan": "node task-monitor.js scan",
+    "monitor:watch": "node task-monitor.js watch",
+    "monitor:hook": "node task-monitor.js hook",
+    "monitor:import": "node scripts/import-tasks.js",
+    "install-hooks": "git config core.hooksPath .githooks"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "claude-task-master": "^1.6.4"
+  }
+}

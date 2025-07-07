@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1751917781466",
+    "title": "Set up GitLab CI/CD pipeline for iOS and Android builds - HIGH priority",
+    "priority": "high",
+    "category": "ci-cd",
+    "completed": false,
+    "createdAt": "2025-07-07T19:49:41.466Z"
+  },
+  {
+    "id": "1751917788134",
+    "title": "Define MVP features for video/photo scanning with AI - CRITICAL",
+    "priority": "critical",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-07T19:49:48.134Z"
+  }
+]

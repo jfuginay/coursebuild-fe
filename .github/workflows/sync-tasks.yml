@@ -1,0 +1,31 @@
+name: Sync Tasks to GitHub Projects
+
+on:
+  issues:
+    types: [opened, edited, closed]
+  pull_request:
+    types: [opened, edited, closed]
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+
+jobs:
+  sync-linear-github:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Sync Linear to GitHub Projects
+        uses: linear/linear-github-sync@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          linear-token: ${{ secrets.LINEAR_API_KEY }}
+          
+      - name: Update Project Board
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const project = await github.projects.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            // Auto-organize by priority

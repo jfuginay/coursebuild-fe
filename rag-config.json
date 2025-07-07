@@ -1,0 +1,72 @@
+{
+  "taskDetection": {
+    "enabled": true,
+    "scanInterval": 300000,
+    "patterns": {
+      "codeQuality": {
+        "priority": "medium",
+        "patterns": [
+          "TODO:",
+          "FIXME:",
+          "console.log",
+          "any type",
+          "!important"
+        ]
+      },
+      "security": {
+        "priority": "critical",
+        "patterns": [
+          "hardcoded secret",
+          "api_key=",
+          "password=",
+          "token=",
+          "eval(",
+          "innerHTML"
+        ]
+      },
+      "performance": {
+        "priority": "high",
+        "patterns": [
+          "n+1 query",
+          "synchronous loop",
+          "blocking operation",
+          "memory leak"
+        ]
+      },
+      "testing": {
+        "priority": "medium",
+        "patterns": [
+          "missing test",
+          "uncovered code",
+          "test coverage < 80%"
+        ]
+      }
+    },
+    "aiAnalysis": {
+      "enabled": true,
+      "model": "gpt-4",
+      "prompts": {
+        "codeReview": "Analyze this code change and identify potential issues, improvements, and tasks that should be created.",
+        "securityAudit": "Review this code for security vulnerabilities and suggest fixes.",
+        "performanceReview": "Identify performance bottlenecks and optimization opportunities."
+      }
+    },
+    "integrations": {
+      "github": {
+        "createIssues": true,
+        "labelMapping": {
+          "critical": "priority:critical",
+          "high": "priority:high",
+          "medium": "priority:medium",
+          "security": "security",
+          "bug": "bug",
+          "enhancement": "enhancement"
+        }
+      },
+      "linear": {
+        "createTasks": true,
+        "projectId": "LISTPRO"
+      }
+    }
+  }
+}
