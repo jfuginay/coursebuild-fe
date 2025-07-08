@@ -120,5 +120,143 @@
     "category": "general",
     "completed": false,
     "createdAt": "2025-07-07T20:02:06.916Z"
+  },
+  {
+    "id": "1751989234975",
+    "title": "CourseForge AI - Set up project infrastructure and repository - HIGH",
+    "priority": "high",
+    "category": "general",
+    "completed": true,
+    "createdAt": "2025-07-08T15:40:34.975Z",
+    "completedAt": "2025-07-08T15:43:49.437Z"
+  },
+  {
+    "id": "1751989244598",
+    "title": "Design database schema for courses, students, instructors, and progress tracking",
+    "priority": "medium",
+    "category": "general",
+    "completed": true,
+    "createdAt": "2025-07-08T15:40:44.598Z",
+    "completedAt": "2025-07-08T15:45:05.123Z"
+  },
+  {
+    "id": "1751989251267",
+    "title": "Build YouTube video processing pipeline with transcript extraction - CRITICAL MVP",
+    "priority": "critical",
+    "category": "ci-cd",
+    "completed": false,
+    "createdAt": "2025-07-08T15:40:51.267Z"
+  },
+  {
+    "id": "1751989257291",
+    "title": "Implement AI course structure generation from video content using GPT-4 - CRITICAL",
+    "priority": "critical",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:40:57.291Z"
+  },
+  {
+    "id": "1751989262557",
+    "title": "Create automated quiz generation system based on course content",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:41:02.557Z"
+  },
+  {
+    "id": "1751989269089",
+    "title": "Build instructor dashboard for course management and student analytics - HIGH",
+    "priority": "high",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:41:09.089Z"
+  },
+  {
+    "id": "1751989276272",
+    "title": "Develop student learning interface with progress tracking and engagement features",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:41:16.272Z"
+  },
+  {
+    "id": "1751989285026",
+    "title": "Implement reference checking and fact verification system for course content",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:41:25.026Z"
+  },
+  {
+    "id": "1751989393798",
+    "title": "CourseForge AI - Integrate existing progress from team documentation - HIGH",
+    "priority": "high",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:43:13.798Z"
+  },
+  {
+    "id": "1751989437462",
+    "title": "Implement Gemini API integration for video processing and transcript extraction - CRITICAL MVP",
+    "priority": "critical",
+    "category": "api-integration",
+    "completed": false,
+    "createdAt": "2025-07-08T15:43:57.462Z"
+  },
+  {
+    "id": "1751989445375",
+    "title": "Build course creation screen with accept/reject questions interface - HIGH MVP",
+    "priority": "critical",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:05.375Z"
+  },
+  {
+    "id": "1751989456597",
+    "title": "Create public course consumption page with video player and quiz integration",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:16.597Z"
+  },
+  {
+    "id": "1751989463971",
+    "title": "Implement video auto-segmentation by topic shifts, speaker changes, and slide transitions",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:23.971Z"
+  },
+  {
+    "id": "1751989472147",
+    "title": "Build multiple quiz types: MCQ, cloze deletion, true/false, short answer - HIGH",
+    "priority": "high",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:32.147Z"
+  },
+  {
+    "id": "1751989482797",
+    "title": "Implement screenshot-to-question tool for course creators",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:42.797Z"
+  },
+  {
+    "id": "1751989490428",
+    "title": "Set up tech stack: React, ShadCN, NextJS for web-based course creation - HIGH",
+    "priority": "high",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:50.428Z"
+  },
+  {
+    "id": "1751989497669",
+    "title": "Build parent dashboard for homeschool tracking and child progress monitoring",
+    "priority": "medium",
+    "category": "general",
+    "completed": false,
+    "createdAt": "2025-07-08T15:44:57.669Z"
   }
 ]
