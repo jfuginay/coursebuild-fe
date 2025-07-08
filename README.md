@@ -1,100 +1,95 @@
-# ListPro / Katalyst AI
+# CourseBuild AI
 
-**AI-powered marketplace listing assistant that scans items via video/photo and helps create optimized listings across multiple platforms.**
+**AI-powered course creation platform that transforms course concepts into comprehensive learning experiences through intelligent video analysis and automated content generation.**
 
 ## 🚀 Quick Start
 
 ```bash
 # Clone and setup
-git clone <repo-url>
-cd listpro
+git clone https://github.com/jfuginay/coursebuild-fe.git
+cd coursebuild-fe
 npm install
 
-# Configure environment
-cp .env.example .env
-# Add your API keys to .env
+# Start Next.js development server
+cd courseforge-ai
+npm run dev
 
-# Set up Supabase
-# 1. Create project at https://app.supabase.com
-# 2. Run schema: psql -f backend/schema.sql
-# 3. Add keys to .env
-
-# Start development
+# Task management system
 npm run task:list  # See all tasks
 npm run monitor:scan  # Auto-detect tasks from code
 ```
 
-## 📱 Deep Link Sharing System
+## 🎓 Course Creation System
 
 ### Overview
-Instead of violating platform ToS with automation, we use **deep links** and **smart templates** to make cross-platform listing nearly automatic while staying compliant.
+Transform course concepts into comprehensive learning experiences using AI-powered video analysis and automated content generation.
 
-### Supported Platforms
+### Current Features
 
-#### 🟢 Auto-Fill Deep Links (85%+ success rate)
-- **Facebook Marketplace** - Full deep link support
-- **OfferUp** - Mobile app + web fallback  
-- **Craigslist** - City-specific URLs with pre-fill
-- **Mercari** - Web deep links
-- **Nextdoor** - Basic support
+#### 🟢 AI-Powered Course Generation
+- **Video Analysis** - Extract key concepts from instructional videos
+- **Content Generation** - Create course outlines and materials
+- **Interactive Components** - Quiz generation and assessments
+- **Multi-format Export** - Support for various learning platforms
 
-#### 🟡 Smart Templates (60% time savings)
-- **Poshmark** - Optimized templates with hashtags
-- **Vinted** - EU-focused formatting
-- **Tradesy** - Luxury item templates
-- **Vestiaire Collective** - Designer templates
+#### 🟡 Course Management (In Development)
+- **Progress Tracking** - Student progress monitoring
+- **Analytics Dashboard** - Course performance metrics
+- **Collaboration Tools** - Team-based course creation
+- **LMS Integration** - Export to popular learning management systems
 
 ### Implementation
 
 ```javascript
-// Generate all deep links for a listing
-const builder = new DeepLinkBuilder();
-const links = builder.generateAllDeepLinks(listing, userLocation);
+// Process video for course content
+const processor = new VideoAIProcessor();
+const analysis = await processor.analyzeVideo(videoFile);
 
-// Open Facebook Marketplace with pre-filled form
-window.open(links.facebook);
+// Generate course structure
+const courseBuilder = new CourseBuilder();
+const course = courseBuilder.generateCourse(analysis, userPrompt);
 
-// Copy Poshmark template to clipboard
-const template = builder.generateTemplate(listing, 'poshmark');
-navigator.clipboard.writeText(template.text);
+// Create interactive components
+const quizGenerator = new QuizGenerator();
+const quiz = quizGenerator.createQuiz(course.modules);
 ```
 
 ### User Experience
 
-1. **Create listing** in ListPro with AI assistance
-2. **Tap "Share to Platforms"** button
-3. **Choose platform** from grid
-4. **Auto-filled form opens** (or template copies)
-5. **Add photos and post** - Done! ✅
+1. **Upload video** or provide course concept
+2. **AI analyzes content** and extracts key information
+3. **Review generated structure** and customize
+4. **Export to preferred format** - Done! ✅
 
 ## 🧠 AI Pipeline
 
 ```
-Photo/Video → Vision API → Item Detection → GPT-4 → Optimized Descriptions → Price Suggestions
+Video Upload → Speech/Vision Analysis → Content Extraction → Course Structure → Interactive Elements → Export
 ```
 
 ### Features
-- **Multi-item detection** from single photo
-- **Category classification** 
-- **Condition assessment**
-- **Platform-optimized descriptions**
-- **Competitive pricing analysis**
+- **Multi-modal analysis** of video and audio content
+- **Concept extraction** and organization
+- **Automated quiz generation**
+- **Interactive component creation**
+- **Personalized learning paths**
 
 ## 🗄️ Database Schema (Supabase)
 
 ```sql
 -- Core tables
-profiles          -- User profiles with ratings
-listings          -- Main listings with AI metadata  
-marketplace_listings -- Cross-platform sync tracking
-marketplace_credentials -- Encrypted OAuth tokens
+profiles          -- User profiles and preferences
+courses           -- Course data and metadata
+course_modules    -- Individual course sections
+video_analyses    -- AI analysis results
+quizzes           -- Generated assessments
 ```
 
 ### Key Features
 - **Row Level Security** enabled
 - **Real-time subscriptions** for live updates
 - **Full-text search** with rankings
-- **Price history tracking**
+- **Progress tracking**
 - **Analytics events**
 
 ## 🔄 Task Management System
@@ -114,7 +109,7 @@ npm run monitor:scan
 ### Task Master
 ```bash
 # Add tasks with auto-prioritization
-npm run task:add "Implement Mercari API integration"
+npm run task:add "Implement video processing pipeline"
 
 # View prioritized board
 npm run task:list
@@ -126,57 +121,61 @@ npm run task:complete <id>
 ## 🏗️ Architecture
 
 ```
-apps/
-├── ios/                    # Swift iOS app
-├── android/               # Kotlin Android app  
-└── backend/               # Supabase + Edge functions
+courseforge-ai/            # Next.js frontend application
+├── components/            # React components
+├── pages/                 # Next.js pages
+├── services/             # API services
+└── utils/                # Utility functions
 
-packages/
-├── core/                  # Shared business logic
-├── marketplace-api/       # API integrations
-├── ai-engine/            # ML/AI processing
-└── mobile-sdk/           # Cross-platform utilities
+components/
+├── VideoListingCamera.jsx # Video capture component
+└── course-builder/       # Course creation UI
 
 services/
-├── deep-link-builder.js  # Cross-platform sharing
+├── video-ai-processor.js # Video analysis service
 ├── supabase-client.js    # Database operations
 └── task-monitor.js       # RAG task detection
 ```
 
-## 🌐 Marketplace APIs
+## 🎯 AI Integration APIs
 
-### ✅ Official API Support
-- **eBay** - Full Trading API with OAuth2
-- **Etsy** - API v3 with shop management
-- **Depop** - Official listings API
-- **Mercari** - Partner API (approval required)
+### ✅ Video Analysis
+- **OpenAI GPT-4** - Content analysis and generation
+- **Google AI** - Speech-to-text and vision processing
+- **Anthropic Claude** - Advanced reasoning and course structure
 
-### ⚠️ Deep Link Support  
-- **Facebook Marketplace** - URL pre-fill
-- **OfferUp** - Mobile deep links
-- **Craigslist** - City-specific URLs
+### ⚠️ Learning Platform Integration  
+- **Moodle** - LMS export support
+- **Canvas** - Course import/export
+- **Teachable** - Content formatting
 
-### 📋 Template Generation
-- **Poshmark** - Hashtag optimization
-- **Vinted** - EU formatting
-- **Others** - Generic templates
+### 📋 Export Formats
+- **SCORM** - Standard e-learning format
+- **xAPI** - Learning analytics
+- **PDF** - Course materials export
 
 ## 🚀 Deployment
 
-### CI/CD Pipeline
-```yaml
-# GitLab CI for builds
-# GitHub Actions for deployment
-# Automatic TestFlight/Play Store releases
+### Vercel Deployment
+```bash
+# Deploy to Vercel
+vercel --prod
+
+# Environment variables needed:
+# - NEXT_PUBLIC_SUPABASE_URL
+# - NEXT_PUBLIC_SUPABASE_ANON_KEY
+# - OPENAI_API_KEY
+# - GOOGLE_AI_API_KEY
 ```
 
-### Mobile Deployment
+### Local Development
 ```bash
-# iOS
-fastlane ios beta  # TestFlight
+# Start development server
+cd courseforge-ai
+npm run dev
 
-# Android  
-fastlane android beta  # Play Store internal testing
+# Build for production
+npm run build
 ```
 
 ## 🤝 Contributing
@@ -188,44 +187,44 @@ fastlane android beta  # Play Store internal testing
 4. **Get quick review** (< 24hr turnaround)
 
 ### First Good Issues
-- Add new marketplace API integration
-- Improve AI item recognition for specific categories  
-- Add internationalization/translations
-- Create listing templates for new categories
-- Enhance image processing pipeline
+- Enhance video processing pipeline
+- Improve AI course structure generation
+- Add new export format support
+- Create interactive component templates
+- Enhance quiz generation algorithms
 
 ## 📊 Success Metrics
 
 - **100 beta users** in first week
 - **10 contributors** in first month  
 - **1000 GitHub stars** in 3 months
-- **5+ marketplace integrations**
-- **80% time savings** vs manual listing
+- **5+ LMS integrations**
+- **80% time savings** vs manual course creation
 
 ## 🎯 Roadmap
 
 ### Phase 1 (Week 1) - MVP
-- [x] Supabase backend setup
-- [x] Deep link system  
-- [ ] eBay + Etsy API integration
-- [ ] Basic AI item recognition
-- [ ] iOS TestFlight release
+- [x] Next.js frontend setup
+- [x] Video capture component
+- [x] AI video processor service
+- [ ] Course generation pipeline
+- [ ] Basic export functionality
 
 ### Phase 2 (Month 1) - Growth
-- [ ] Android release
-- [ ] Additional marketplace APIs
-- [ ] Advanced AI features
-- [ ] Community features
+- [ ] Enhanced AI analysis
+- [ ] Multiple export formats
+- [ ] User authentication
+- [ ] Course collaboration features
 
 ### Phase 3 (Month 3) - Scale
 - [ ] Enterprise features
 - [ ] Advanced analytics
-- [ ] Marketplace partnerships
+- [ ] LMS partnerships
 - [ ] Open source ecosystem
 
 ## 💡 Vision
 
-**"The Plaid for marketplace selling"** - Universal API and tools for anyone to build marketplace applications. Make selling across platforms as easy as taking a photo.
+**"The Stripe for course creation"** - Universal API and tools for anyone to build educational applications. Make course creation as easy as recording a video.
 
 ## 🔗 Links
 
@@ -236,4 +235,4 @@ fastlane android beta  # Play Store internal testing
 
 ---
 
-Built with ❤️ by the ListPro team using Claude Code Opus
+Built with ❤️ by the CourseBuild team using Claude Code
