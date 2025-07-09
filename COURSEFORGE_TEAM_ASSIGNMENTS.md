@@ -1,4 +1,4 @@
-# CourseForge AI - Team Task Assignments
+# CourseBuild AI - Team Task Assignments
 
 ## 🚀 MVP in 1 Week - Who Does What
 
@@ -141,4 +141,4 @@ API Layer → Public Course Page → Student Experience
 
 ---
 
-**Remember**: We're building the "Cursor for Course Creators" 🚀
+**Remember**: We're building the "Cursor for Course Creators" via CourseBuild.org! 🚀
