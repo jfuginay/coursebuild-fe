@@ -1,4 +1,4 @@
-# 🚀 ListPro/CourseForge AI
+# 🚀 CourseBuild.org
 
 > **The Universal Creator's Platform** - Transform any video into engaging educational content and multi-platform marketplace listings with cutting-edge AI
 
