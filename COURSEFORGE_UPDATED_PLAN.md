@@ -1,4 +1,4 @@
-# CourseForge AI - Updated Project Plan with Progress
+# CourseBuild AI - Updated Project Plan with Progress
 
 ## 🎯 MVP Definition (From Your Notes)
 

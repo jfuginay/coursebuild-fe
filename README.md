@@ -6,9 +6,9 @@
 
 ## 🌟 About This Project
 
-**ListPro/CourseForge AI** is an ambitious open-source platform that combines two powerful use cases:
+**ListPro/CourseBuild AI** is an ambitious open-source platform that combines two powerful use cases:
 
-### 🎓 **CourseForge**: AI-Powered Education
+### 🎓 **CourseBuild**: AI-Powered Education
 Transform any YouTube video or recorded content into comprehensive, interactive learning experiences. Our multimodal AI analyzes video, audio, and visual content to generate:
 - **Structured course modules** with intelligent segmentation
 - **Interactive quizzes** synced to video timestamps  
@@ -49,7 +49,7 @@ cd coursebuild-fe
 npm install
 
 # Start Next.js development server
-cd courseforge-ai
+cd coursebuild-ai
 npm run dev
 
 # Task management system
@@ -159,7 +159,7 @@ npm run task:complete <id>
 ## 🏗️ Architecture
 
 ```
-courseforge-ai/            # Next.js frontend application
+coursebuild-ai/            # Next.js frontend application
 ├── components/            # React components
 ├── pages/                 # Next.js pages
 ├── services/             # API services
@@ -209,7 +209,7 @@ vercel --prod
 ### Local Development
 ```bash
 # Start development server
-cd courseforge-ai
+cd coursebuild-ai
 npm run dev
 
 # Build for production

@@ -1,4 +1,4 @@
-# CourseForge AI - Project Management Plan
+# CourseBuild AI - Project Management Plan
 
 ## 🎯 Project Overview
 
