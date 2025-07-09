@@ -1,6 +1,44 @@
-# CourseBuild AI
+# 🚀 ListPro/CourseForge AI
 
-**AI-powered course creation platform that transforms course concepts into comprehensive learning experiences through intelligent video analysis and automated content generation.**
+> **The Universal Creator's Platform** - Transform any video into engaging educational content and multi-platform marketplace listings with cutting-edge AI
+
+**🎯 Vision**: Bridge the gap between content creation and commerce by making course creation as simple as recording a video, while revolutionizing how people sell items across all major marketplaces.
+
+## 🌟 About This Project
+
+**ListPro/CourseForge AI** is an ambitious open-source platform that combines two powerful use cases:
+
+### 🎓 **CourseForge**: AI-Powered Education
+Transform any YouTube video or recorded content into comprehensive, interactive learning experiences. Our multimodal AI analyzes video, audio, and visual content to generate:
+- **Structured course modules** with intelligent segmentation
+- **Interactive quizzes** synced to video timestamps  
+- **Automated content generation** optimized for multiple platforms
+- **Real-time learning analytics** and progress tracking
+
+### 🛒 **ListPro**: Intelligent Marketplace Automation
+Revolutionary video+voice AI that turns a simple recording into perfect listings across eBay, Etsy, Poshmark, Instagram, and more. Record yourself describing an item and watch AI extract:
+- **Rich product descriptions** with emotional context
+- **Condition assessment** from voice cues and visual analysis
+- **Cross-platform optimization** for maximum reach
+- **Social media integration** with trending hashtags
+
+## 🔥 What Makes This Special
+
+**🧠 Multimodal AI at Scale**: We're the first platform to combine video, audio, and visual analysis for both education and commerce
+**⚡ Zero Infrastructure Costs**: Smart YouTube embedding eliminates video storage while maintaining full functionality  
+**🌐 Universal Integration**: One recording, infinite platforms - from LMS systems to social commerce
+**🎯 Real User Problems**: Solving actual pain points in education creation and marketplace selling
+**🔓 Open Source First**: Built for the community, by the community - with enterprise features available
+
+## 💡 Why Contribute?
+
+- **🚀 Cutting-Edge Tech**: Work with OpenAI GPT-4, Google Gemini, Whisper, and advanced multimodal AI
+- **📈 Massive Market**: $366B online education + $4T e-commerce markets
+- **🏆 First-Mover Advantage**: No other platform combines video AI for both education and commerce  
+- **🤝 Supportive Community**: <24hr PR reviews, mentorship, and clear contribution paths
+- **💰 Equity Opportunity**: Top contributors eligible for equity as we scale
+
+**This isn't just another AI project - it's the foundation for the next generation of content-to-commerce platforms.**
 
 ## 🚀 Quick Start
 
